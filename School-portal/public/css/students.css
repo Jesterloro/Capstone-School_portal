@@ -1,0 +1,72 @@
+.table-responsive {
+    scrollbar-width: thin;
+    scrollbar-color: #16C47F #f4f4f4;
+}
+
+.table-responsive::-webkit-scrollbar {
+    width: 8px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+    background-color: #1E293B;
+    border-radius: 0;
+}
+
+.table-responsive::-webkit-scrollbar-track {
+    background: #f4f4f4;
+}
+    /* Pagination styling */
+    .custom-pagination {
+        display: flex;
+        justify-content: end;
+        list-style: none;
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    .custom-pagination li {
+        margin: 0 5px;
+        transition: transform 0.3s ease-in-out, background-color 0.3s ease;
+    }
+
+    .custom-pagination a {
+        display: block;
+        padding: 8px 15px;
+        border: 1px solid #1E293B;
+        border-radius: 8px;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        transition: all 0.3s ease;
+    }
+
+    .custom-pagination .active a {
+        background-color: #1E293B;
+        color: white;
+        border-color: #1E293B;
+        transform: scale(1.1);
+    }
+
+    .custom-pagination a:hover {
+        background-color: #1E293B;
+        color: white;
+        transform: translateY(-5px);
+    }
+
+    .custom-pagination .disabled {
+        opacity: 0.5;
+        pointer-events: none;
+    }
+
+    #custom-search-form input::placeholder, #custom-search-form select {
+        color: #6c757d;
+    }
+    #custom-search-form select:focus, #custom-search-form input:focus {
+        outline: none;
+        border: 1px solid #1E293B;
+        transition: border 0.2s ease;
+    }
+    #custom-search-form button:hover {
+        background-color: #0B8457;
+        transition: background-color 0.3s ease;
+    }
